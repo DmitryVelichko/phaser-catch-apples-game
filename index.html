@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <p>Лови яблоки!</p>
+      <p>Поймай как можно больше яблок!</p>
     </header>
     <main>
       <canvas id="gameCanvas"></canvas>
@@ -17,14 +17,15 @@
         <p>У тебя есть 30 секунд, чтобы поймать упавшие фрукты!</p>
         <p>Поймаешь 10+ штук и ты победил.</p>
         <p>Поймаешь меньше, и ты проиграл : (</p>
-        <p>Нажми "Старт", чтобы начать</p>
+        <p>Управляй корзиной кнопками "&lt;-" и "-&gt;"</p>
         <button id="gameStartBtn"><p>Старт</p></button>
       </div>
       <div id="gameEndDiv" class="gameUI">
-        <p>Game Over</p>
-        <h1>Вы<span id="gameWinLoseSpan"></span></h1>
-        <h1>Набрали очков: <span id="gameEndScoreSpan"></span></h1>
-        <p>Хотите сыграть ещё раз? Обновите страницу!</p>
+        <h1>Game Over</h1>
+        <h1>Ты<span id="gameWinLoseSpan"></span></h1>
+        <h2>Всего очков: <span id="gameEndScoreSpan"></span></h3>
+        <p>Хочешь сыграть ещё раз? Жми на кнопку!</p>
+        <button id="gameStartBtn" onclick="playAgain()">Играть!</button>
       </div>
       </div>
     </main>
@@ -32,5 +33,8 @@
       <p>Сделано на Phaser с 💖</p>
     </footer>
     <script type="module" src="/main.js"></script>
+    <script>function playAgain() {
+      window.location.reload();
+    }</script>
   </body>
 </html>

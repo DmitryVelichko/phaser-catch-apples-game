@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ловец яблок</title>
+  </head>
+  <body>
+    <header>
+      <p>Лови яблоки!</p>
+    </header>
+    <main>
+      <canvas id="gameCanvas"></canvas>
+      <div id="gameStartDiv" class="gameUI">
+        <h1>Ловец  яблок</h1>
+        <p>У тебя есть 30 секунд, чтобы поймать упавшие фрукты!</p>
+        <p>Поймаешь 10+ штук и ты победил.</p>
+        <p>Поймаешь меньше, и ты проиграл : (</p>
+        <p>Нажми "Старт", чтобы начать</p>
+        <button id="gameStartBtn"><p>Старт</p></button>
+      </div>
+      <div id="gameEndDiv" class="gameUI">
+        <p>Game Over</p>
+        <h1>Вы<span id="gameWinLoseSpan"></span></h1>
+        <h1>Набрали очков: <span id="gameEndScoreSpan"></span></h1>
+        <p>Хотите сыграть ещё раз? Обновите страницу!</p>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <p>Сделано на Phaser с 💖</p>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
